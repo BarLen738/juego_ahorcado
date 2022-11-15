@@ -1,0 +1,154 @@
+* {
+  font-family: 'Peralta', cursive;
+  box-sizing: border-box;
+}
+
+body {
+  width: auto;
+  height: 100vh;
+  position: relative;
+  margin: 0;
+  padding: 0;
+  background-image: url("images/unicorn6.jpg");
+}
+
+
+.logo {
+  display: flex;
+  padding-left: 1rem;
+  padding-top: 1rem;
+  width: 2.5rem;
+}
+
+.titulo {
+  color: rgb(90, 4, 90);
+  opacity: .5;
+  text-align: center;
+  font-size: 2.5rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+.botones-home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.btn-iniciar,
+.btn-palabra,
+.btn-azul,
+.btn-blanco {
+  display: flex;
+  justify-content: center;
+  color: rgb(138, 138, 138);
+  margin: 1rem;
+  padding: 1.3rem 0;
+  width: 15rem;
+  background-image: linear-gradient(to top, #feada6 0%, #f5efef 100%);
+  border-style: none;
+  border-radius: 15px;
+  font-size: 1rem;
+}
+
+canvas {
+  background-image: url("images/unicorn6.jpg");
+  object-fit: contain;
+  display: flex;
+  justify-content: flex-start;
+  position: relative;
+  top: 4rem;
+  width: 100%;
+  height: 100%;
+}
+
+.botones-div-canvas {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  top: 4rem;
+}
+
+.palabra-nueva {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.text-input {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+  padding: 1rem 1rem;
+  margin-top: 2.5rem;
+  margin-left: 2rem;
+  border-style: none;
+  border-radius: 5px;
+  opacity: 0.6;
+  font-size: 1rem;
+}
+
+label {
+  margin-left: 2rem;
+  margin-top: -1rem;
+  color: rgb(90, 4, 90);
+  opacity: .5;
+  font-size: 0.9rem;
+}
+
+.botones-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 3rem;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  body {
+    overflow-x: hidden;
+  }
+
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 601px) and (max-width : 768px) {
+  body {
+    overflow-x: hidden;
+  }
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 769px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  .titulo {
+    font-size: 3.8rem;
+  }
+
+.btn-iniciar,
+.btn-palabra,
+.btn-azul,
+.btn-blanco {
+  padding: 2rem;
+  font-size: 1.2rem;
+}
+
+.text-input {
+  font-size: 1.2rem;
+  margin-left: 4rem;
+}
+
+label {
+  margin-left: 4rem;
+  font-size: 1.2rem;
+}
+}

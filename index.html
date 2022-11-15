@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Juego del ahorcado</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Peralta&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <header class="bienvenida">
+
+    <img src="images/logo.svg" class="logo">
+
+    <div class="hola">
+      <h1 class="titulo" id="título">El juego del ahorcado</h1>
+    </div>
+
+  </header>
+
+
+  <main>
+
+    <div id="div-desaparece" class="botones-home">
+
+
+      <a href="#forca">
+        <!-- Botones/inputs -->
+        <!--Botón para iniciar juego-->
+        <input class="btn-iniciar" type="submit" value="Comenzar a jugar" id="iniciar-juego">
+      </a>
+
+      <!--Botón para agregar palabra-->
+      <button class="btn-palabra" id="nova-palabra" onclick="ensenarPantallaDeAgregarPalabra()">Cargar palabra</button>
+
+
+    </div>
+
+
+
+
+    <section>
+
+
+      <div id="agregar-palabra" class="palabra-nueva">
+
+        <!--Caja de texto para que el usuario cargue una palabra para jugar-->
+        <input class="text-input" type="text" id="input-nueva-palabra" maxlength="8"
+          placeholder="Escribe tu palabra aquí">
+
+        <!--Mensaje debajo del placeholder-->
+        <div class="form-group">
+
+          <img src="" class="img-alerta" alt="">
+          <label for="input-texto">Por favor, 8 caracteres como máximo</label>
+
+        </div>
+
+        <div class="botones-div">
+
+          <!--Botón para continuar-->
+          <input class="btn-azul" type="submit" value="Guardar y empezar" id="btn-guardar">
+
+          <!--Botón para volver atrás-->
+          <input class="btn-blanco" type="submit" value="Cancelar" id="btn-cancelar">
+
+        </div>
+
+
+      </div>
+
+    </section>
+
+
+    <section>
+
+      <!--Creo un div para guardar el tablero donde se va a dibujar y lo conecto con JS a traves de su id-->
+
+
+      <div id="div-aparece-ahorcado" class="canvas">
+
+        <!-- Canvas -->
+        <canvas id="forca" width="1480px" height="960px"></canvas>
+
+        <!--Guiones a llenar-->
+        <div class="subrayado">
+
+        </div>
+
+        <div class="botones-div-canvas" id="botones-jugando">
+
+          <!--Botón para empezar un nuevo juego-->
+          <input class="btn-azul" type="submit" value="Juego nuevo" id="btn-nuevo-juego">
+
+          <!--Botón para salir del juego-->
+          <input class="btn-blanco" type="submit" value="Salir del juego" id="btn-salir">
+
+        </div>
+
+
+      </div>
+
+    </section>
+
+  </main>
+
+  <footer>
+
+
+  </footer>
+
+
+  <!-- JavaScript -->
+  <script type="text/javascript" src="canvas.js"></script>
+  <script type="text/javascript" src="forca.js"></script>
+
+
+
+
+</body>
+
+</html>
